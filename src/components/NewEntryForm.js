@@ -13,7 +13,8 @@ function NewEntryForm() {
     isExpense,
     setIsExpense,
     addEntry,
-  } = useEntryDetails;
+    updateEntry
+  } = useEntryDetails();
 
   return (
     <Form unstackable>

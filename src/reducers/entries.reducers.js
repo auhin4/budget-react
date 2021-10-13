@@ -16,7 +16,7 @@ const reducer = (state = initialEntries, action) => {
       const index = newEntries.findIndex(
         (entry) => entry.id === action.payload.id
       );
-      newEntries[index] = { ...action.payload.entry };
+      newEntries[index] = { ...newEntries[index], ...action.payload.entry };
       return newEntries;
     default:
       return state;
