@@ -13,7 +13,6 @@ function NewEntryForm() {
     isExpense,
     setIsExpense,
     addEntry,
-    updateEntry
   } = useEntryDetails();
 
   return (

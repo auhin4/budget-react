@@ -9,6 +9,7 @@ import { useEffect, useState } from "react";
 import ModalEdit from "./components/ModalEdit";
 import { useDispatch, useSelector } from "react-redux";
 import { getAllEntries } from './actions/entries.actions';
+import axios from 'axios';
 
 function App() {
   const [incomeTotal, setIncomeTotal] = useState(0);
@@ -36,6 +37,14 @@ function App() {
     setExpenseTotal(totalExpense);
     setIncomeTotal(totalIncome);
   }, [entries]);
+
+  async function fetchInitialData() {
+    const result = await axios.get('http://localhost:3001/entries');
+    console.log(result);
+  }
+  useEffect(()=>{
+    fetchInitialData();
+  },[]);
 
   const dispatch = useDispatch();
   useEffect(() => {

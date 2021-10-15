@@ -2,11 +2,11 @@
   "entries": [
     {
       "id": 1,
-      "description": "Income Rent"
+      "description": "Income"
     },
     {
       "id": 2,
-      "description": "Power Water"
+      "description": "Water"
     },
     {
       "id": 3,
@@ -14,7 +14,7 @@
     },
     {
       "id": 4,
-      "description": "Power bill"
+      "description": "Electricity"
     },
     {
       "id": "e8805fe8-d9c3-4c8f-8e17-1cfbf33dee1e",
@@ -23,6 +23,10 @@
     {
       "id": "e615d0f7-d83b-4153-a1e2-b4329f1c5c3b",
       "description": "Another entry to show now"
+    },
+    {
+      "id": "bd4a7432-943d-44d3-81bc-ab3dabd45115",
+      "description": "pumpkins"
     }
   ],
   "values": [
@@ -33,7 +37,7 @@
     },
     {
       "id": 2,
-      "value": 20,
+      "value": 500,
       "isExpense": true
     },
     {
@@ -55,6 +59,11 @@
       "id": "e615d0f7-d83b-4153-a1e2-b4329f1c5c3b",
       "isExpense": true,
       "value": "10"
+    },
+    {
+      "id": "bd4a7432-943d-44d3-81bc-ab3dabd45115",
+      "isExpense": false,
+      "value": "400"
     }
   ]
 }
