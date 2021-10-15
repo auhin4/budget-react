@@ -11,6 +11,7 @@ function EntryLine({
   isExpense = false
 }) {
   const dispatch = useDispatch();
+  dispatch({type:'TEST_MESSAGE'});
   return (
     <Fragment>
       <Segment color={isExpense ? "red" : "green"}>

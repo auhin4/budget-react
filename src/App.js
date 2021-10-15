@@ -21,7 +21,7 @@ function App() {
   useEffect(() => {
     const index = entries.findIndex(entry => entry.id === id);
     setEntry(entries[index]);
-  }, [isOpen]);
+  }, [isOpen, id, entries]);
 
   useEffect(() => {
     let totalIncome = 0;
@@ -55,7 +55,8 @@ function App() {
       <EntryLines entries={entries} />
 
       <MainHeader title="Add New Transaction" type="h3" />
-      <NewEntryForm />
+      <NewEntryForm 
+      />
       <ModalEdit isOpen={isOpen} {...entry}/>
     </Container>
   );

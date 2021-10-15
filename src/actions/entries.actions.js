@@ -7,7 +7,7 @@ const types = {
   UPDATE_ENTRY: 'UPDATE_ENTRY',
   REMOVE_ENTRY_RESULT: 'REMOVE_ENTRY_RESULT',
   ADD_ENTRY_RESULT: 'ADD_ENTRY_RESULT',
-};
+}
 export default types;
 
 export const addEntryRedux = (payload) => {
